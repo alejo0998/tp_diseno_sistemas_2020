@@ -1,0 +1,342 @@
+.botonera{
+	width:100%;
+	background-color:lightblue;
+	box-sizing:border-box;
+	margin:0;
+	padding-bottom: 2px solid lightblue;
+	
+	
+}
+.botonera-lista{
+	display:flex;
+}
+
+.botonera li{
+	flex-grow:1;
+	list-style:none;
+}
+.botonera a{
+
+	text-align: center;
+	display: block;
+	padding-top: 28px;
+	padding-bottom:28px;
+	color:white;
+	text-decoration:none;
+	border-right:1px solid white;
+	border-bottom: 2px solid lightblue;
+	
+}
+
+
+.botonera a:hover{
+	background-color:white;
+	color:black;
+	text-decoration: none;
+
+	
+}
+
+body{
+
+	background-image:url("images/fondo.jpg");
+}
+
+.cabecera{
+	/* background-color:green; */
+	display:flex;
+	justify-content:center;
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:16px;
+	margin-bottom:16px;
+	padding-bottom: 30px;
+	align-items:center;
+	background-repeat:no-repeat;
+	
+}
+.cabecera h1{
+	font-family:cooper;
+	color:lightblue;
+	font-size:3.5em;
+}
+
+
+
+
+.categorias_contenedor{
+	background : white;
+}
+
+
+.mensaje_respuesta{
+	font-family:cooper;
+	font-size:1.5em;
+    background: lightblue;
+    color : white;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    text-decoration: null;
+	
+}
+
+.mensaje_confirmacion{
+	 background: black;
+	 width: 95%;
+	 margin: auto;
+	padding-top : 30px;
+	padding-bottom : 20px;
+	text-decoration: none;
+}
+
+.mensaje_confirmacion h2{
+	text-decoration : none;
+}
+
+
+.select_visual{
+	 background: white;
+     border: none;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 100%;
+     margin-top:10px;
+     margin-bottom:10px;
+ 
+}
+
+
+#cerrar{
+     margin: auto;
+    position: absolute;
+    margin: 50px;
+    /* background-color: black; */
+    margin-left: 1400px;
+    margin-bottom: 90px;
+    font-family: cooper;
+    color: lightblue;
+    /* font-size: 3.5em; */
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: lightblue;
+}
+#option_select{
+	margin-top:20px;
+ 
+}
+
+
+#select_abajo{
+	margin-top:15px;
+}
+
+.carga_entidad{
+	font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 15px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    background: black;
+    color: white;
+    font-family: cooper;
+    margin-top: 10px;
+}
+
+
+.categorias a{
+	text-decoration: none;
+	color : white;
+    font-family: cooper;
+}
+.categorias{
+	
+}
+.categorias li{
+	margin: 20px;
+	background : black;
+
+    padding: 10px;
+    font-size: 20px;
+    
+        width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categorias_contenedor {
+    /* background: white; */
+    background: lightblue;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+   
+}
+
+
+
+.entidades_categoria{
+	background:lightblue;
+	margin-top:20px;
+	font-family: cooper;
+	
+}
+.entidades_categoria h1{
+	color: black;
+	text-align:center;
+	margin-top:10px;
+	padding-top:20px;
+	margin-bottom:20px;
+	padding-bottom:20px;
+	
+	
+}
+.entidades_categoria h2{
+	color: black;
+	background:lightblue;
+    text-align: center;
+    margin-top: 20px;
+	
+}
+
+.entidades_categoria h3{
+	color: black;
+	background:lightblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+	
+}
+
+
+.entidades_categoria li{
+	color: black;
+	    align-items: center;
+    margin-left: auto;
+   
+    width: 50%;
+    margin-right: auto;
+	
+}
+
+.entidades_categoria ul{
+	color: black;
+	    align-items: center;
+    margin-left: auto;
+   
+    width: 100%;
+    margin-right: auto;
+	
+}
+
+.input_entidad{
+	margin-top:10px;
+}
+
+.bandeja_mensajes{
+	margin-top:20px;
+	width:100%;
+	background:lightblue;
+
+}
+
+.mensaje_enviar{
+
+    /* display: flex; */
+    margin-top: -180px;
+
+}
+
+.envio_mensaje{
+	width:100%
+}
+
+.envio_mensaje input{
+	width:100%
+}
+
+.mensajes_recibidos{
+	margin-left: auto;
+	margin-right:auto;
+	    margin-top: -110px;
+	  
+
+}
+.usuario_mensaje_recibido{
+	float:left;
+}
+.contenido_mensaje_recibido{
+	float:right;
+	margin-left: 300px;
+}
+
+.entidades_juridicas_h2{
+	padding-top:15px;
+}
+.carga_entidades{
+	    background: lightblue;
+    margin-left: auto;
+    /* background: red; */
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.nombre_entidad_base{
+	
+}
+
+.entidades_base_checkbox{
+	
+}
+
+
+#celda_usuario{
+	width:25%;
+}
+
+#main-container{
+	margin: 150px auto;
+	width: 95%;
+}
+
+#main-container h2{
+	    text-align: center;
+ 
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: cooper;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: black;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}

@@ -1,0 +1,38 @@
+{{# partial "titulo" }}
+    <title>GeSoc - Home</title>
+{{/partial}}
+
+
+{{# partial "contenido" }}
+
+<section class="login">
+
+	<div class = "formulario_inicio_sesion">
+       
+        <form class="inicio-sesion" method="POST">
+        
+         <h2 class = "iniciar_sesion_text">
+            Crear Entidad Base
+        </h2>
+        	<select name="organizacion_id" class = "select_visual" id = "select_abajo">
+                <option value="null">Seleccionar Organizacion</option>
+                    {{#todasLasOrganizaciones}}
+                        <option value={{id}}>{{razonSocial}}</option>
+                    {{/todasLasOrganizaciones}}
+            </select>
+            <input type="text" name="nombreFicticio" placeholder="Nombre Ficticio" required>
+            <input type="text" name="descripcion" placeholder="Descripcion" required>
+            <select name="categoria_id" class = "select_visual">
+                <option value="null">Seleccionar Categoria</option>
+                    {{#todasLasCategorias}}
+                        <option value={{id}}>{{nombre}}</option>
+                    {{/todasLasCategorias}}
+            </select>
+    
+              <button id="enviar" name="enviar" type="submit" value="Agregar Entidad" class="btn">Agregar Entidad</button>
+        </form>
+       </div>
+       </section>
+ {{/partial}}
+
+{{> layout.html.hbs }}

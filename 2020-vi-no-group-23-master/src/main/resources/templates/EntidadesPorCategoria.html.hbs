@@ -1,0 +1,90 @@
+{{# partial "titulo" }}
+    <title> GeSoc - Entidades </title>
+{{/partial}}
+
+{{# partial "contenido" }}
+
+    <body>
+    <div class = "entidades_categoria">
+        <h1>
+            Entidades con la categoria {{nombreCategoria}}
+        </h1>
+       
+        	<main class = "entidad">
+   
+    <div class = "entidades_juridicas_visualizacion"> 
+    
+    <div id="main-container">
+   <h2 class = "entidades_juridicas_h2"> Entidades Juridicas</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Nombre ficticio</th><th>Razon social</th><th>Cuit</th><th>Codigo Postal</th> <th> Tipo </th> <th> Entidades Base</th>
+				</tr>
+			</thead>
+			 {{#entidadesJuridicas}}
+			<tr>
+				<td>{{nombreFicticio}}</td><td>{{razonSocial}}</td><td>{{cuit}}</td><td>{{codigoPostal}}</td><td> {{tipoCategoria}}</td><td><a href="/">Base Asociada</a></td>
+			</tr>
+	       {{/entidadesJuridicas}}
+		
+		</table>
+
+
+        <h2 class = "entidades_juridicas_h2"> Entidades Base</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Nombre ficticio</th><th>Descripcion</th> <th>Organizacion</th>
+				</tr>
+			</thead>
+			   {{#entidadesBase}}
+			<tr>
+				<td>{{nombreFicticio}}</td><td>{{descripcion}}</td><td>OrganizacionAsociada
+			</tr>
+	         {{/entidadesBase}}
+		
+		</table>
+       
+
+        
+
+  
+<!--           <a class = "carga_entidad" href="/Entidades/nueva-base"> Cargar entidad base</a> -->
+      
+        </div>
+    </div>        
+
+    </main>
+        
+<!--         <form method="POST" class="formulario_entidades_categorias"> -->
+<!--         <h3> -->
+<!--             Agregar una entidad jurídica a esta categoria: -->
+<!--         </h3> -->
+<!--             <select name="entidadJuridica_id" class = "select_visual"> -->
+<!--                 <option value="null">Seleccionar</option> -->
+<!--                 {{#entidadesJuridicas2}} -->
+<!--                     <option value={{id}}>{{nombreFicticio}}</option> -->
+<!--                 {{/entidadesJuridicas2}} -->
+<!--             </select> -->
+<!--             <input type="submit" value="Agregar Entidad" class = "input_entidad"> -->
+<!--         </form> -->
+        
+<!--         <form method="POST" class="formulario_entidades_categorias"> -->
+<!--         <h3> -->
+<!--             Agregar una entidad base a esta categoria: -->
+<!--         </h3> -->
+<!--             <select name="entidadBase_id" class = "select_visual"> -->
+<!--                 <option value="null" id="option_select">Seleccionar</option> -->
+<!--                 {{#entidadesBase2}} -->
+<!--                     <option value={{id}}>{{nombreFicticio}}</option> -->
+<!--                 {{/entidadesBase2}} -->
+<!--             </select> -->
+<!--             <input type="submit" value="Agregar Entidad" class = "input_entidad"> -->
+<!--         </form> -->
+        
+        </div>
+    </body>
+{{/partial}}
+
+{{> layout.html.hbs }}

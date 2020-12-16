@@ -1,0 +1,69 @@
+{{# partial "titulo" }}
+    <title>GeSoc - Home</title>
+{{/partial}}
+
+
+{{# partial "contenido" }}
+
+<section class="login">
+
+	<div class = "formulario_inicio_sesion">
+	
+ 
+        <form method="POST">
+        
+        <h2 class = "iniciar_sesion_text">
+            Crear Entidad Juridica
+        </h2>
+        	<select name="organizacion_id" class = "select_visual" id = "select_abajo">
+                <option value="null">Seleccionar Organizacion</option>
+                    {{#todasLasOrganizaciones}}
+                        <option value={{id}}>{{razonSocial}}</option>
+                    {{/todasLasOrganizaciones}}
+            </select>
+            <input type="text" name="nombreFicticio" placeholder="Nombre Ficticio" required>
+            <input type="text" name="razonSocial" placeholder="Razon Social" required>
+            <input type="number" name="cuit" placeholder="Cuit" required>
+            <input type="number" name="codigoPostal" placeholder="Codigo Postal" required>
+            <select name="tipo_id" class = "select_visual">
+                <option value="null">Seleccionar tipo</option>
+                    {{#tipos}}
+                        <option value={{this}}>{{valor}}</option>
+                    {{/tipos}}
+            </select>
+            <select name="categoria_id" class = "select_visual" id = "select_abajo">
+                <option value="null">Seleccionar Categoria</option>
+                    {{#todasLasCategorias}}
+                        <option value={{id}}>{{nombre}}</option>
+                    {{/todasLasCategorias}}
+            </select>
+            <select name="entidadBase_id" class = "select_visual" id = "select_abajo">
+                <option value="null">Seleccionar Entidad Base</option>
+                    {{#todasLasEntidadesBase}}
+                        <option value={{id}}>{{nombreFicticio}}</option>
+                    {{/todasLasEntidadesBase}}
+            </select>
+         
+  
+<!--          <h3> Entidades Base</h3> -->
+<!--          {{#todasLasEntidadesBase}} -->
+<!-- 			<input type="checkbox" value={{id}} class = "select_visual"> -->
+<!-- 			<label class = "nombre_entidad_base"> {{nombreFicticio}}</label> -->
+<!--          {{/todasLasEntidadesBase}} -->
+
+                    
+     
+            
+              <button id="enviar" name="enviar" type="submit" value="Agregar Entidad" class="btn">Agregar Entidad</button>
+              
+        </form>
+        
+        </div>
+        
+        
+</section>
+        
+ {{/partial}}
+
+{{> layout.html.hbs }}
+ 

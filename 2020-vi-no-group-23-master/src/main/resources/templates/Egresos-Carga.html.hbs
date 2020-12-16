@@ -1,0 +1,61 @@
+{{# partial "titulo" }}
+    <title>GeSoc - Home</title>
+{{/partial}}
+
+{{# partial "contenido" }}
+	<main >
+    <section class="login">
+	<div class = "formulario_inicio_sesion">
+	
+ 
+        <form method="POST">
+        
+         <h2 class = "iniciar_sesion_text">
+            Crear Egreso
+        </h2>
+        
+            <select name="proveedor_id" class = "select_visual" required>
+               <option value="null">Seleccionar proveedor</option>
+                    {{#todosLosProveedores}}
+                        <option value={{id}}>{{nombre}}</option>
+                    {{/todosLosProveedores}}
+            </select>
+            <input type="text" name="cant_presupuestos" placeholder="Cantidad de presupuestos" required>
+<!--             <input type="date" name="fecha" placeholder="Fecha" required> -->
+
+              <select name="tipo_id" class = "select_visual">
+                <option value="null">Seleccionar metodo de pago</option>
+                    {{#tipos}}
+                        <option value={{this}}>{{valor}}</option>
+                    {{/tipos}}
+            </select>
+            <input type="text" name="id_medioPago" placeholder="Numero/Valor" required>
+            <select name="etiqueta_id" class = "select_visual">
+                <option value="null">Seleccionar etiqueta</option>
+                    {{#todasLasEtiquetas}}
+                        <option value={{id}}>{{nombre}}</option>
+                    {{/todasLasEtiquetas}}
+            </select>
+            <select name="item_id" class = "select_visual">
+                <option value="null">Seleccionar Item</option>
+                    {{#todosLosItems}}
+                        <option value={{id}}>{{descripcion}}</option>
+                    {{/todosLosItems}}
+            </select>
+            
+            
+            
+              <button id="enviar" name="enviar" type="submit" value="Agregar Egreso" class="btn">Agregar Egreso</button>
+            	
+        </form>
+        
+       </div>
+
+
+	
+	</section>
+	</main>
+        
+ {{/partial}}
+
+{{> layout.html.hbs }}

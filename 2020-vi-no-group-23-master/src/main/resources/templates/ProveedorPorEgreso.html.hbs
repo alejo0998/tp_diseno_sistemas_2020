@@ -1,0 +1,45 @@
+{{# partial "titulo" }}
+    <title> GeSoc - Egresos </title>
+{{/partial}}
+
+{{# partial "contenido" }}
+
+	<body>
+    <div class = "entidades_categoria">
+        <h1>
+            Egresos realizados al proveedor {{nombreProveedor}}
+        </h1>
+       
+        	<main class = "entidad">
+   
+    <div class = "entidades_juridicas_visualizacion"> 
+    
+   <div id="main-container">
+   <h2 class = "entidades_juridicas_h2"> Egresos</h2>
+		<table>
+			<thead>
+				<tr>
+					<!--<th>Fecha</th>--><th>Metodo de pago</th><th>Etiquetas</th><th>Items</th> <th> Valor total </th>
+				</tr>
+			</thead>
+			 {{#comprasRealizadas}}
+			<tr>
+				<!--<td>fecha</td>--><td>medio de pago</td><td>Etiquetas</td><td>items</td><td> total</td>
+			</tr>
+	       {{/comprasRealizadas}}
+		
+		</table>
+  
+<!--           <a class = "carga_entidad" href="/Entidades/nueva-base"> Cargar entidad base</a> -->
+      
+        </div>
+    </div>        
+
+	    </main>   
+	    
+        </div> 
+    </body>
+
+{{/partial}}
+
+{{> layout.html.hbs }}

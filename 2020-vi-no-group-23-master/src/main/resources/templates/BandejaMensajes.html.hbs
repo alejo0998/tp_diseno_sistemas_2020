@@ -1,0 +1,71 @@
+
+{{# partial "titulo" }}
+    <title> GeSoc - Bandeja de Mensajes </title>
+{{/partial}}
+
+{{# partial "contenido" }}
+  	<main class = bandeja_mensajes>
+	    
+		<div class = "mensajes_recibidos">
+
+<!-- 			<div class = "mensaje_recibido"> -->
+<!-- 				<ul> -->
+<!-- 					<li class = "usuario_mensaje_recibido">  Usuario:  </li> -->
+<!-- 					<li class = "contenido_mensaje_recibido"> Contenido Mensaje:</li> -->
+<!-- 				</ul> -->
+<!-- 			</div> -->
+
+
+	<div id="main-container">
+		<h2> Bandeja Mensajes</h2>
+		<table>
+			<thead>
+				<tr>
+					<th id = "celda_usuario">Proveedor</th><th>Fecha</th><th>Contenido</th>
+				</tr>
+			</thead>
+
+			<tr>
+				<td>Proveedor</td><td>fecha</td><td>contenido de mensaje</td>
+			</tr>
+			<tr>
+				<td>Proveedor</td><td>fecha</td><td>contenido de mensaje</td>
+			</tr>
+			<tr>
+				<td>Proveedor</td><td>fecha</td><td>contenido de mensaje</td>
+			</tr>
+			<tr>
+				<td>Proveedor</td><td>fecha</td><td>contenido de mensaje</td>
+			</tr>
+		</table>
+	</div>
+		
+		</div>
+		
+		<div class = "mensaje_enviar">
+
+		
+			<form class = "envio_mensaje" method="POST">
+	
+		        <select name="tipo_id" class = "select_visual">
+                <option value="null">Seleccionar Proveedor</option>
+                    {{#proveedores}}
+                        <option value=BandejaMensajes/{{id}}>{{nombre}}</option>
+                    {{/proveedores}}
+            </select>
+			  <textarea name="comentarios" rows="10" cols="40" placeholder = "Contenido mensaje..."> </textarea>
+			   <button id="enviar" name="enviar" type="submit" value="Enviar Mensaje" class="btn">Enviar Mensaje</button>
+			
+			</form>
+		
+		
+		</div>
+
+		
+					
+
+    </main>
+  
+{{/partial}}
+
+{{> layout.html.hbs }}

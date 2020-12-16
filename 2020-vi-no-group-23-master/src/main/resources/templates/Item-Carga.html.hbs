@@ -1,0 +1,44 @@
+{{# partial "titulo" }}
+    <title>GeSoc - Home</title>
+{{/partial}}
+
+{{# partial "contenido" }}
+	<main >
+    <section class="login">
+	<div class = "formulario_inicio_sesion">
+	
+ 
+        <form method="POST">
+        
+         <h2 class = "iniciar_sesion_text">
+            Cargar Items
+        	</h2>
+        	
+            <input type="text" name="descripcion" placeholder="Descripcion" required>
+            <input type="text" name="valor_unitario" placeholder="Valor unitario" required>
+            <input type="text" name="cantidad" placeholder="Cantidad" required>
+            <select name="tipo_id" class = "select_visual">
+                <option value="null">Seleccionar tipo</option>
+                    {{#tiposItem}}
+                        <option value={{this}}>{{valor}}</option>
+                    {{/tiposItem}}
+            </select>
+            <select name="moneda_id" class = "select_visual">
+                <option value="null">Seleccionar moneda</option>
+                    {{#todasLasMonedas}}
+                        <option value={{id}}>{{simbolo}}</option>
+                    {{/todasLasMonedas}}
+            </select>
+            
+            	<button id="enviar" name="enviar" type="submit" value="Agregar Item" class="btn">Agregar Item</button>
+            	
+        </form>
+        
+       </div>
+	
+	</section>
+	</main>
+        
+ {{/partial}}
+
+{{> layout.html.hbs }}

@@ -1,0 +1,303 @@
+body {
+  margin: auto;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+}
+
+h1 {
+ font-weight: 300;
+ color : white;
+}
+
+h2 {
+ font-weight: 300;
+}
+
+
+footer {
+	backgroud: red;
+}
+
+section.fondo-gris {
+	width : 95%;
+    background: grey;
+}
+
+
+footer.fondo-gris {
+    background: black;
+    padding: auto;
+    color: white;
+    
+  
+}
+
+.nueva-consultora .campo{
+    margin: 10px ;
+}
+
+.nueva-consultora .nombre-campo{
+    margin-right: 10px;
+}
+
+.login .campo{
+    margin: 10px ;
+}
+.login h2{
+	font-family:cooper;
+}
+.login .nombre-campo{
+    margin-right: 10px;
+}
+
+section.login{
+	width : 100%;
+	display: flex;
+	background : lightblue;
+	margin: auto;
+	margin-top:20px;
+    
+}
+
+.entidades_base_visualizacion{
+	background : lightblue;
+	text-align-last: center;
+	 list-style:none;
+    
+}
+
+.entidades_juridicas_visualizacion{
+	background : lightblue;
+	text-align-last: center;
+	 list-style:none;
+	 padding-bottom: 40px;
+	
+}
+.entidad{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	    margin-top: -110px;
+	
+}
+.entidad h2{
+	font-family:cooper;
+	color:black;
+	margin-top:50px;
+	margin-bottom:20px;
+	text-decoration:none;
+	
+}
+
+.entidad ul{
+	font-family:sans-serif;
+	
+}
+ul{
+	 list-style:none;
+}
+
+
+.iniciar_sesion_text{
+	margin : auto;
+	display: flex;
+    justify-content: center;
+	padding-bottom : 20px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+form{
+  
+  padding: 60px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  
+}
+
+form input, form textarea{
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: horizontal; 
+}
+
+form button {
+	display: block;
+	background-color: #454645;
+	padding: 10px 80px 10px 80px;
+	display: flex;
+    justify-content: center;
+	border: 0;
+	font-size: 1em; 
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 10px;
+	
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+}
+form button: hover{
+	background-color: green;
+	display: flex;
+    justify-content: center;
+}
+
+
+
+.creacion_entidades{
+
+	
+}
+
+.crear_entidad_base{
+	padding-left: 150;
+	padding-top: 1px;
+}
+
+.crear_entidad_juridica{
+	margin-top : -20px;
+	padding-left: 150;
+}
+
+.formulario_inicio_sesion{
+	width : 100%;
+   	margin : auto;
+	
+}
+
+
+.categorias_categorias{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+
+	
+}
+.categorias_categorias h2{
+	font-family:cooper;
+	color:black;
+	padding-top:10px;
+	
+}
+
+.categorias_categorias ul{
+
+	padding-bottom:50px;
+	
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.carouselContainer {
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.carouselImgs {
+  width: 100%;
+  height: 100%;
+  animation: fade 1.5s;
+  display: none;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 49%;
+  cursor: pointer
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide1 {
+  background-color: black;
+  background-image: url("/images/proyecto.jpg");
+  background-repeat: no-repeat;
+}
+
+.slide2 {
+  background-color: black;
+  background-image: url("/images/gestion3.jpg");
+  background-repeat: no-repeat;
+}
+
+.slide3 {
+  background-color: black;
+    background-image: url("/images/gestion2.png");
+
+  background-repeat: no-repeat;
+}
+
+.egresos{
+	background: lightblue;
+	width : 100%;
+}
+
+.egresos h2{
+	color: black;
+	font-family:cooper;
+}

@@ -1,0 +1,64 @@
+{{# partial "titulo" }}
+    <title> GeSoc - Entidades </title>
+{{/partial}}
+
+{{# partial "contenido" }}
+
+ 
+
+
+  	<main class = "entidad">
+   
+    <div class = "entidades_juridicas_visualizacion"> 
+    
+    <div id="main-container">
+    <h2 class = "mensaje_respuesta">
+        <b><u>{{mensajeOperacionCorrecta}}</u></b>
+    </h2>
+   <h3>{{errorJuridicas}}</h3>
+   <h2 class = "entidades_juridicas_h2"> Entidades Juridicas</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Nombre ficticio</th><th>Razon social</th><th>Cuit</th><th>Codigo Postal</th><th> Tipo </th> <th>Cantidad egresos</th> <th> Entidades Base</th>
+				</tr>
+			</thead>
+			 {{#entidadesJuridicas}}
+			<tr>
+				<td>{{nombreFicticio}}</td><td>{{razonSocial}}</td><td>{{cuit}}</td><td>{{codigoPostal}}</td><td> tipo </td> <td> {{cantidadEgresos}}</td><td><a href="/">Base Asociada</a></td>
+			</tr>
+	       {{/entidadesJuridicas}}
+		
+		</table>
+
+     
+        
+        <h3>{{errorBase}}</h3>
+        <h2 class = "entidades_juridicas_h2"> Entidades Base</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Nombre ficticio</th><th>Descripcion</th> <th>Organizacion</th>
+				</tr>
+			</thead>
+			   {{#entidadesBase}}
+			<tr>
+				<td>{{nombreFicticio}}</td><td>{{descripcion}}</td><td>OrganizacionAsociada
+			</tr>
+	         {{/entidadesBase}}
+		
+		</table>
+       
+
+        
+
+  
+        </div>
+    </div>        
+
+    </main>
+
+	
+{{/partial}}
+
+{{> layout.html.hbs }}

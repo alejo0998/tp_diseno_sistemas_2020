@@ -1,0 +1,20 @@
+#categorias{
+	background : red;
+	margin : 50px;
+	padding : 50px;
+}
+
+.categorias{
+	background : red;
+	margin : 50px;
+	padding : 50px;
+}
+
+.select_visual {
+     background: transparent;
+     border: none;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 250px;
+  }

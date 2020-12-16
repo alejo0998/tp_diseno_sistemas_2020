@@ -1,0 +1,35 @@
+{{# partial "titulo" }}
+    <title> GeSoc - Visualizacion Categorias </title>
+{{/partial}}
+
+{{# partial "contenido" }}
+  	
+  	<body id = "categorias" >
+  	<main class = "categorias_categorias">
+  	<div class = "categorias_contenedor">
+      
+        <h2> Categorias </h2>
+	        <div class = "categorias">
+	       
+   
+		        <ul>
+		            {{#Categorias}}
+		                    <li><a href="Categorias/{{id}}">{{nombre}}</a></li>
+		            {{/Categorias}}
+		            		<li><a href="Entidades">Todas las entidades</a></li>
+		        </ul>
+	        
+	        	
+	        </div>
+	</div>
+		<div class = "carga_entidades">
+	         	  <a href="/Entidades/nueva-juridica" class = "carga_entidad"> Cargar entidad juridica</a> 
+	         	  <a class = "carga_entidad" href="/Entidades/nueva-base"> Cargar entidad base</a>
+	    </div>
+	    </main>    
+    </body>
+    
+  
+{{/partial}}
+
+{{> layout.html.hbs }}
